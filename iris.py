@@ -8,16 +8,14 @@ print(df.head())
 plt.bar(df['Species'].value_counts().index,
         df['Species'].value_counts().values)
 
-plt.title("Flower Count")
-plt.xlabel("Species")
-plt.ylabel("Count")
+plt.title("Sepal Length Histogram") 
+plt.xlabel("Sepal Length")
+plt.ylabel("Frequency")             
 plt.show()
 
-plt.hist(df['SepalLengthCm'], bins=10)
-
-plt.title("Sepal Lenght Hist")
-plt.xlabel("Sepal Length")
-plt.ylabel("Freq")
+plt.title("Width Comparison")       
+plt.xlabel("Sepal Width")
+plt.ylabel("Petal Width")
 plt.show()
 
 plt.scatter(df['SepalLengthCm'], df['PetalLengthCm'])
