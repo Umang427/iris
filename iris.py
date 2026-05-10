@@ -10,6 +10,13 @@ print(df.info())
 print("\nSummary Statistics:")
 print(df.describe())
 
+print("\n--- Data Quality Check ---")
+print("Missing Values:")
+print(df.isnull().sum())
+
+print("\nDuplicate Rows:", df.duplicated().sum())
+print("--------------------------\n")
+
 plt.bar(df['Species'].value_counts().index,
         df['Species'].value_counts().values)
 
